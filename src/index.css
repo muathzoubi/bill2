@@ -1,0 +1,226 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 5px;
+}
+
+h1 {
+  font-size: 3.2em;
+  margin: 5px;
+  line-height: 1.1;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #bc078fca;
+  cursor: pointer;
+  color: #fff;
+  transition: border-color 0.25s;
+  margin-top: 15px;
+}
+button:hover {
+  background-color: #bc078f7c;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+.app {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.g-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+.g-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+textarea {
+  padding: 20px;
+  max-height: 100px;
+  border: 1px #a19c9c93 solid;
+  font-family: 'Zain', sans-serif;
+  border-radius: 10px;
+}
+table.redTable {
+  border: 2px solid #9d9d9d;
+  background-color: #fef4ff;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.redTable td,
+table.redTable th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 4px;
+}
+table.redTable tbody td {
+  font-size: 11px;
+  color: #453c47;
+}
+table.redTable tr:nth-child(even) {
+  background: #a4407b;
+}
+table.redTable thead {
+  background: #a4407b;
+}
+table.redTable thead th {
+  font-size: 17px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  border-left: 2px solid #9e72a4;
+}
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot {
+  font-size: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #a4799c;
+}
+table.redTable tfoot td {
+  font-size: 8px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a {
+  display: inline-block;
+  background: #ffffff;
+  color: #a4a4a4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+/* Bill container */
+.bill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Bill card styling */
+.bill {
+  width: 60%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Bill title */
+.bill-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Bill date */
+.bill-date {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Table styling */
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bill-table th,
+.bill-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.bill-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.bill-table tfoot {
+  font-weight: bold;
+  background-color: #fafafa;
+}
+
+.bill-table tfoot td {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+/* Button styling */
+.bill-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bill-button:hover {
+  background-color: #45a049;
+}
