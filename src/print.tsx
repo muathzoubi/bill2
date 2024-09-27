@@ -19,40 +19,24 @@ const BillGenerator = () => {
   };
 
   return (
-    <div>
-      <div ref={billRef} style={{ padding: '20px', border: '1px solid #000' }}>
-        <h2>Bill</h2>
-        <p>Date: {new Date().toLocaleDateString()}</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Quantity</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Item 1</td>
-              <td>2</td>
-              <td>$10</td>
-            </tr>
-            <tr>
-              <td>Item 2</td>
-              <td>1</td>
-              <td>$20</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Total</td>
-              <td></td>
-              <td>$40</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-
+      <div className="d-flex card w-full " ref={billRef} style={{ padding: '20px', border: '1px solid #000' }} dir='rtl'>
+    
+    <div className="card">
+  <img src="./vite.svg" className="card-img-top" style={{height:80}} alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">اللغة العربية</p>
+  </div>
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">An item</li>
+    <li className="list-group-item">A second item</li>
+    <li className="list-group-item">A third item</li>
+  </ul>
+  <div className="card-body">
+    <a href="#" className="card-link">Card link</a>
+    <a href="#" className="card-link">Another link</a>
+  </div>
+</div>
       <button onClick={generatePDF} style={{ marginTop: '20px' }}>
         تحميل{' '}
       </button>

@@ -25,13 +25,16 @@ const BillForm = ({ addBill }: any) => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <input
-          type="text"
-          placeholder="المستخدم"
-          value={user}
-          onChange={(e) => setUser(e.target.value)}
-          required
-        />
+      <select>
+      <option>د. عمار الزعبي</option>
+      <option>د. عمار الزعبي</option>
+      <option>د. عمار الزعبي</option>
+      <option>د. عمار الزعبي</option>
+      <option>د. عمار الزعبي</option>
+      <option>د. عمار الزعبي</option>
+      <option>د. عمار الزعبي</option>
+
+      </select>
       </div>
       <div className="g-1">
         <textarea

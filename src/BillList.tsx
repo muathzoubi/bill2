@@ -1,6 +1,9 @@
 import { Key } from 'react';
 
 const BillList = ({ bills }: any) => {
+  const printRec=(billData:any,billUser:string)=>{
+    console.log(billData ,billUser)
+  }
   return (
     <div>
       <h2>الفواتير المحفوظة </h2>
@@ -24,14 +27,14 @@ const BillList = ({ bills }: any) => {
                 items: string;
                 desc: string;
               },
-              index: Key | null | undefined
+              index: number 
             ) => (
               <tr key={index}>
                 <th scope="row">{bill.date}</th>
                 <td>{bill.items}</td>
                 <td>{bill.desc}</td>
                 <td>{bill.amount}</td>
-                <td>{bill.amount}</td>
+                <td><button onClick={()=>printRec(bill,bill.user)}>M</button></td>
               </tr>
             )
           )}
